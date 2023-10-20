@@ -87,6 +87,7 @@ projects.forEach((project) => {
   projectSummary.textContent = project.description;
 
   const projectTechnologies = document.createElement("p");
+  projectTechnologies.classList.add("project-summary");
   projectTechnologies.textContent = `Technologies Used are ${project.technologies}`;
 
   projectDetailDiv.appendChild(projectTitle);

@@ -30,7 +30,8 @@ body {
     color: var(--text-color);
     height: 100vh;
     scroll-snap-type: y mandatory;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     z-index: 0;
 }
 
@@ -452,7 +453,8 @@ header {
 
 @media screen and (max-width: 768px) {
     .My-details {
-        font-size: 1em;
+        font-size: 1.2em;
+        line-height: 1.2em;
     }
 }
 

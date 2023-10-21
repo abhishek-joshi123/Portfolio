@@ -35,6 +35,19 @@ body {
     z-index: 0;
 }
 
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(156 163 175 / 0.2);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(247 171 10 / 0.8);
+    border-radius: 10px;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -731,11 +744,25 @@ header {
 .all-projects-div {
     position: relative;
     width: 100%;
+    height: 100%;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
     z-index: 20;
+}
+
+.all-projects-div::-webkit-scrollbar {
+    height: 20px;
+}
+
+.all-projects-div::-webkit-scrollbar-track {
+    background: rgb(156 163 175 / 0.2);
+}
+
+.all-projects-div::-webkit-scrollbar-thumb {
+    background: rgb(247 171 10 / 0.8);
+    border-radius: 9999px;
 }
 
 .project {

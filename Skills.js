@@ -37,7 +37,7 @@ export const skills = [
     },
     {
       name: "React",
-      percentage: "75%",
+      percentage: "80%",
       imageSrc: "Images\\Skills\\React.png",
     },
     {

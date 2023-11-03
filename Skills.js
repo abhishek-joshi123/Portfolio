@@ -1,6 +1,11 @@
 
 export const skills = [
     {
+      name: "DSA",
+      percentage: "90%",
+      imageSrc: "Images\\Skills\\DSA.png",
+    },
+    {
       name: "C",
       percentage: "80%",
       imageSrc: "Images\\Skills\\C.png",
@@ -76,9 +81,14 @@ export const skills = [
       imageSrc: "Images\\Skills\\Mongodb.png",
     },
     {
-      name: "ML",
+      name: "SQL",
+      percentage: "60%",
+      imageSrc: "Images\\Skills\\SQL.png",
+    },
+    {
+      name: "firebase",
       percentage: "50%",
-      imageSrc: "Images\\Skills\\ML.png",
+      imageSrc: "Images\\Skills\\Firebase.png",
     },
     {
       name: "Git",

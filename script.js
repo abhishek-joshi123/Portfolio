@@ -82,17 +82,22 @@ projects.forEach((project) => {
   projectTitle.classList.add("Project-headings");
   projectTitle.innerHTML = `<span>Case Study ${projects.indexOf(project) + 1} of ${projects.length}</span> : ${project.title}`;
 
-  const projectSummary = document.createElement("p");
-  projectSummary.classList.add("project-summary");
-  projectSummary.textContent = project.description;
+  const projectContainer = document.createElement("div");
+projectContainer.classList.add("project-details-container");
 
-  const projectTechnologies = document.createElement("p");
-  projectTechnologies.classList.add("project-summary");
-  projectTechnologies.textContent = `Technologies Used are ${project.technologies}`;
+const projectSummary = document.createElement("p");
+projectSummary.classList.add("project-summary");
+projectSummary.textContent = project.description;
+
+const projectTechnologies = document.createElement("p");
+projectTechnologies.classList.add("project-summary");
+projectTechnologies.textContent = `Technologies Used are ${project.technologies}`;
+
+projectContainer.appendChild(projectSummary);
+projectContainer.appendChild(projectTechnologies);
 
   projectDetailDiv.appendChild(projectTitle);
-  projectDetailDiv.appendChild(projectSummary);
-  projectDetailDiv.appendChild(projectTechnologies);
+  projectDetailDiv.appendChild(projectContainer);
 
   projectDiv.appendChild(projectLink);
   projectDiv.appendChild(projectDetailDiv);
@@ -208,5 +213,27 @@ function downloadPDF() {
   link.click();
   document.body.removeChild(link);
 }
+
+// ====================================================== //
+//   contact
+
+const SubmitButton = document.querySelector(".contact-form-button")
+const Name = document.querySelector("#name")
+const Email = document.querySelector("#email")
+const Subject = document.querySelector("#subject")
+const Message = document.querySelector("#message")
+
+SubmitButton.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  let name = encodeURIComponent(Name.value);
+  let email = encodeURIComponent(Email.value);
+  let subject = encodeURIComponent(Subject.value);
+  let message = encodeURIComponent(Message.value);
+
+  let mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=abhishekjoshi3636829@gmail.com&su=${subject}&body=${message}%0A%0AFrom:%20${name}`;
+
+  window.open(mailtoLink, '_blank');
+});
 
 

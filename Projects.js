@@ -10,6 +10,16 @@ export const projects = [
       technologies: "Node.js, Express.js, MongoDB, CSS, Redux, JWT authentication, RESTful API design",
     },
     {
+      title: "Signal Chat Application",
+      link: "https://github.com/abhishek-joshi123/Signal_Chat_App",
+      images: {
+        laptop: "Images/Projects/SignalChats.png",
+        phone: "Images/Projects/SignalMessage.jpg", 
+      },
+      description: "Developed a User-friendly real time chat application for both iOS and Android effortlessly. Utilize Expo’s pre-built components for a streamlined development process with secured user authentication mechanisms.",
+      technologies: "React, React-Native, Expo, Firebase",
+    },
+    {
       title: "Notes Saving App",
       link: "https://github.com/abhishek-joshi123/INoteBook",
       images: {

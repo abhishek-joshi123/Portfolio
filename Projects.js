@@ -10,6 +10,16 @@ export const projects = [
       technologies: "Node.js, Express.js, MongoDB, CSS, Redux, JWT authentication, RESTful API design",
     },
     {
+      title: " HandWritten Digit Recognization",
+      link: "https://github.com/abhishek-joshi123/Handwritten_recognization",
+      images: {
+        laptop: "Images/Projects/DigitLaptop.png",
+        phone: "Images/Projects/DigitPhone.png",
+      },
+      description: "Developed a highly accurate handwritten digit recognition system, emphasizing robust data processing and user-friendly functionalities. Designed the underlying data model, implemented efficient algorithms for digit recognition, and ensured secure data storage.",
+      technologies: "OS, Tkinter, TenserFlow, ImageGrab, OpenCV, matplotlib, Numpy",
+    },
+    {
       title: "Signal Chat Application",
       link: "https://github.com/abhishek-joshi123/Signal_Chat_App",
       images: {

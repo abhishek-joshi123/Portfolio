@@ -203,17 +203,22 @@ observer4.observe(ProjectImage);
 
 // ====================================================== //
 
+const downloadBtn = document.querySelector('#download-btn')
+
 function downloadPDF() {
   const pdfPath = 'Abhishek_Joshi.pdf';
   
   const link = document.createElement('a');
   link.href = pdfPath;
-  link.download = 'your_file_name.pdf';
+  link.download = 'Abhishek_Joshi.pdf';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
 }
 
+downloadBtn.addEventListener('click', downloadPDF);
+
+  
 // ====================================================== //
 //   contact
 

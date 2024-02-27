@@ -10,6 +10,16 @@ export const projects = [
       technologies: "Node.js, Express.js, MongoDB, CSS, Redux, JWT authentication, RESTful API design",
     },
     {
+      title: "Ai Image Generator",
+      link: "https://github.com/abhishek-joshi123/AI-Image-Generator",
+      images: {
+        laptop: "Images/Projects/GenAiLaptop.png",
+        phone: "Images/Projects/GenAiPhone.png",
+      },
+      description: "developed an AI image generator web application, leveraging Next.js, TypeScript, and MongoDB. The application integrates the OpenAI API to generate high-quality images based on user-entered prompts. The project focused on providing users with a seamless experience for creating custom images.",
+      technologies: "OpenAI, Typescript, Next.js, MongoDB, Cloudinary, JWT authentication",
+    },
+    {
       title: " HandWritten Digit Recognization",
       link: "https://github.com/abhishek-joshi123/Handwritten_recognization",
       images: {

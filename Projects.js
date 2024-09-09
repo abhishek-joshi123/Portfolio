@@ -1,12 +1,12 @@
 export const projects = [
     {
-      title: "Ecommerce App",
+      title: "Cartopia",
       link: "https://cartopia-shop.onrender.com",
       images: {
         laptop: "Images/Projects/CartopiaLaptop.png",
         phone: "Images/Projects/CArtopiaPhone.png",
       },
-      description: "Developed a responsive web application for an e-commerce platform, focusing on enhancing the online shopping experience and increasing sales designed the data model, implements API endpoints, and ensuring data security.",
+      description: "Developed a responsive Ecommerce web application for an e-commerce platform, focusing on enhancing the online shopping experience and increasing sales designed the data model, implements API endpoints, and ensuring data security.",
       technologies: "Node.js, Express.js, MongoDB, CSS, Redux, JWT authentication, RESTful API design",
     },
     {

@@ -1,5 +1,15 @@
 export const projects = [
     {
+      title: "Notionize",
+      link: "https://github.com/abhishek-joshi123/Notionize",
+      images: {
+        laptop: "Images/Projects/NotionLaptop.png",
+        phone: "Images/Projects/NotionPhone.png",
+      },
+      description: "This project features real-time data synchronization across workspaces, folders, and files, with automatic updates and multi-server consistency. It includes real-time cursors for collaborative work, allowing users to see others' activities instantly. The system supports comprehensive folder and file management, secure authentication with login and subscription via Stripe, and cross-device compatibility for seamless user experience",
+      technologies: "Next.js, Typescript, tailwind CSS, Redux, PostgreSQL, Supabase",
+    },
+    {
       title: "Cartopia",
       link: "https://cartopia-shop.onrender.com",
       images: {
